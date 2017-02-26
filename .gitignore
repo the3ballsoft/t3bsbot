@@ -11,3 +11,4 @@ public/*
 *.swp
 *.swo
 .DS_Store
+npm-debug.log
