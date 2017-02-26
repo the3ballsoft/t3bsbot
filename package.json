@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "a bot messenger to t3bs fan page",
   "main": "app.js",
+  "engines": {
+    "node": "5.9.1"
+  },
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
