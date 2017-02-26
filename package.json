@@ -1,0 +1,27 @@
+{
+  "name": "t3bsbot",
+  "version": "1.0.0",
+  "description": "a bot messenger to t3bs fan page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the3ballsoft/t3bsbot.git"
+  },
+  "keywords": [
+    "bot",
+    "messenger",
+    "t3bs"
+  ],
+  "author": "Jose E",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the3ballsoft/t3bsbot/issues"
+  },
+  "homepage": "https://github.com/the3ballsoft/t3bsbot#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
