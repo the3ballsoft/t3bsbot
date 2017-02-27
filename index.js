@@ -1,6 +1,8 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var request = require('request')
+var handleMsg = require('./handleMsg.js')
+
 var app = express()
 
 app.use(bodyParser.json())
@@ -9,7 +11,7 @@ app.use(bodyParser.json())
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.send(handleMsg.generic('msg'))
 })
 
 app.get('/webhook', function(req, res) {
@@ -91,7 +93,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: messageText
+      text: handleMsg.generic(messageText)
     }
   };
 
