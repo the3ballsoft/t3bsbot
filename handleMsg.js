@@ -42,7 +42,6 @@ function proccessLoop(msg, arr){
 function lenguegeParser(msg){
   var words  = ['monda', 'marica', 'gay', 'chupa']
   for(var i = 0; i < words.length; i++){
-    console.log(words[i], msg)
     if(msg.indexOf(words[i]) !== -1){
       return  'Que grocero'
     }
